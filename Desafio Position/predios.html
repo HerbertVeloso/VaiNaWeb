@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Predio</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		/*.predio{
+			width: 400px;
+			height: 90vh;
+			background: grey;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 200px);
+		}
+		.janelas{
+			width: 300px;
+			position: absolute;
+			left: calc(50% - 150px);
+			margin: 50px 0;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+		.janela{
+			width: 50px;
+			height: 50px;
+			margin: 10px 5px;
+			background: blue;
+			border: 5px solid #fff;
+		}
+		.portas{
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			bottom: 0;
+			left: calc(50% - 100px);
+			background: brown;
+		}*/
+
+		.cidade{
+			width: 100vw;
+			height: 100vh;
+			background: lightblue;
+		}
+		.lua{
+			width: 8vw;
+			height: 8vw;
+			position: absolute;
+			top: 5vw;
+			left: calc(40% - 2.5vw);
+			background: white;
+			border-radius: 50%;
+		}
+		.lua:after{
+			content: "";
+			width: 5vw;
+			height: 5vw;
+			background: lightblue;
+			position: absolute;
+			left: calc(40%);
+			top: calc(50% - 2.5vw);
+			border-radius: 50%;
+		}
+		.predio{
+			width: 15vw;
+			position: absolute;
+			bottom: 0;
+			border: 1px solid #000;
+			border-bottom: 0;
+		}
+		.predio1{
+			height: 65vh;
+			background: grey;
+			left: 0;
+			z-index: 2;
+		}
+		.predio2{
+			height: 80vh;
+			background: linear-gradient(to top, lightgrey, white);
+			left: 10vw;
+			z-index: 3;
+		}
+		.predio3{
+			height: 60vh;
+			background: linear-gradient(to top, lightgrey, white);;
+			left: 20vw;
+			z-index: 2;
+		}
+		.sombra1{
+			height: 70vh;
+			background: black;
+			left: 15vw;
+			z-index: 1;
+		}
+		.sombra2{
+			height: 50vh;
+			background: black;
+			left: 25vw;
+			z-index: 1;
+		}
+		.sombra3{
+			height: 20vh;
+			background: black;
+			left: 40vw;
+			z-index: 1;
+		}
+		.predio4{
+			height: 55vh;
+			background: grey;
+			left: 45vw;
+			z-index: 2;
+		}
+		.predio5{
+			height: 80vh;
+			background: linear-gradient(to top, lightgrey, white);
+			left: 55vw;
+			z-index: 3;
+		}
+		.predio6{
+			width: 25vw;
+			height: 40vh;
+			background: linear-gradient(to top, lightgrey, white);
+			right: 0;
+			z-index: 3;
+		}
+		.predio7{
+			height: 65vh;
+			background: grey;
+			right:  5vw;
+			z-index: 2;
+		}
+		.sombra4{
+			height: 60vh;
+			background: black;
+			right: 23vw;
+			z-index: 1;
+		}
+		.sombra5{
+			height: 75vh;
+			background: black;
+			right: -5vw;
+			z-index: 1;
+		}
+		.janelas{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+			align-content: space-between;
+			margin: 2vw 1vw 0;
+		}
+		.janela{
+			width: 2vw;
+			height: 2.5vw;
+			margin: 0.5vw;
+			background: lightblue;
+			border: 1px solid black;
+			box-shadow: inset 0 8px 6px -6px black;;
+		}
+	</style>
+</head>
+<body>
+	<main class="cidade">
+		<div class="lua"></div>
+		<section class="predio predio1">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+			</div>
+		</section>
+		<section class="predio predio2">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+			</div>
+		</section>
+		<section class="predio predio3">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+			</div>
+		</section>
+		<section class="predio sombra1"></section>
+		<section class="predio sombra2"></section>
+		<section class="predio sombra3"></section>
+		<section class="predio predio4">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+			</div>
+		</section>
+		<section class="predio predio5">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+			</div>
+		</section>
+		<section class="predio predio6">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+			</div>
+		</section>
+		<section class="predio predio7">
+			<div class="janelas">
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+				<div class="janela"></div>
+
+			</div>
+		</section>
+		<section class="predio sombra4"></section>
+		<section class="predio sombra5"></section>
+
+	</main>
+	<!-- <main class="predio">
+		<section class="janelas">
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+			<div class="janela"></div>
+		</section>
+		<section class="portas">
+			<div class="porta1"></div>
+			<div class="porta2"></div>
+		</section>
+	</main> -->
+</body>
+</html>

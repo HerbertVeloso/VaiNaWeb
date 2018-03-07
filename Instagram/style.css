@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+.menu{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    height: 51px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 20%;
+}
+.logo{
+    height: 30px;
+    width: 30px;
+    padding: 4px 10px 0;
+}
+.busca{
+    width:  213px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 6px 0;
+    font-weight: 300;
+}
+.busca::-webkit-input-placeholder { /* Chrome, Safari, Opera */
+  text-align: center;
+}
+ 
+.busca::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+.botaoEntrar{
+    text-decoration: none;
+    color: #3897f0;
+    font-weight: 500;
+}
+.principal{
+    margin: 0 20%;
+}
+.cabecalho{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+.fotoPerfil{
+	border-radius: 50%;
+}
+.info{
+	display: flex;
+	flex-direction: column;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #262626;
+}
+.infoNome{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.nome{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+}
+.infoBotao{
+	background: #3897f0;
+	margin-left: 10px;
+	padding: 5px 24px;
+	border: 1px solid;
+	border-radius: 3px;
+	font-weight: bolder;
+	color: #fff;
+
+}
+.infoItens{
+	padding: 0;
+	list-style: none;
+}
+.infoItem{
+	display: inline;
+    margin-right: 25px;
+}
+.texto{
+    margin: 0;
+}
+.conteudo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.foto{   
+    margin: 13px 0;
+    width: 293px;
+    height: 293px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.rodape{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 38px 13px;
+}
+.rodapeItens{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+.rodapeItem{
+	margin: 0 8px 0 0;
+	text-decoration: none;
+	font-size: 10pt;
+    font-weight: 500;
+	color: #003569;
+}
+.direitos{
+    font-size: 10pt;
+    color: #999;
+}
