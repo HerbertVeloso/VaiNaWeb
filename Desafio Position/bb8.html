@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BB-8</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        .background{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(180deg, #abd6ea 40%, #ffcf94 40%);
+        }
+        @-webkit-keyframes roll{
+            0%{
+                transform: rotate(0deg);
+            }
+            20%{
+                transform: rotate(-500deg);
+            }
+            30%{
+                transform: rotate(-500deg);
+            }
+            70%{
+                transform: rotate(500deg);
+            } 
+            80%{
+                transform: rotate(500deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        @-webkit-keyframes movement{
+            0%{
+                transform: translate(0, 0);
+            }
+            20%{
+                transform: translate(-300px, 0);
+            }
+            30%{
+                transform: translate(-300px, 0);
+            }
+            50%{
+                transform: translate(0, 0);
+            }
+            70%{
+                transform: translate(300px, 0);
+            }
+            80%{
+                transform: translate(300px, 0);
+            }
+            100%{
+                transform: translate(0, 0);
+            }
+        }
+        @-webkit-keyframes blink{
+            74%{
+               border: 13px solid #5d5d5c;;
+            }
+            75%{
+                border: 25px solid #5d5d5c;;
+            }
+            76%{
+                border: 13px solid #5d5d5c;;
+            }
+        }
+        .bb8{
+            animation: movement 12s linear infinite;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: 50%;
+        }
+        .antenna-1{
+            width: 4px;
+            height: 30px;
+            background: #5d5d5c;
+            position: absolute;
+            top: calc(40% - 112px);
+            left: calc(50% + 30px);
+            z-index: 19;
+        }
+        .antenna-2{
+            width: 3px;
+            height: 50px;
+            background: #5d5d5c;
+            position: absolute;
+            top: calc(40% - 125px);
+            left: calc(50% + 40px);
+            z-index: 19;
+        }
+        .antenna-2:after{
+            content: "";
+            width: 7px;
+            height: 25px;
+            background: #494848;
+            position: absolute;
+            bottom: -5px;
+            left: -2px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            z-index: 19;
+        }
+        .head{
+            position: absolute;
+            top: calc(40% - 90px);
+            left: calc(50% - 95px); 
+            z-index: 20;
+        }
+        .head-top-crop{
+            width: 200px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .head-top{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ebf2fa;
+            border: 8px solid #244356;
+            box-sizing: border-box;
+            z-index: 23;
+        }
+        .eye{
+            width: 70px;
+            height: 70px;
+            background: #494848;
+            border: 13px solid #5d5d5c;
+            border-radius: 50%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: calc(50% - 20px);
+            left: calc(50% - 35px);
+            animation: blink 12s linear infinite;
+        }
+        .pupil{
+            width: 20px;
+            height: 20px;
+            background: #434343;
+            border-radius: 50%;
+        }
+        .pupil:before{
+            content: "";
+            width: 9px;
+            height: 9px;
+            background: #bcbcc1;
+            border-radius: 50%;
+            z-index: 25;
+            position: absolute;
+            top: calc(50% - 25px);
+            left: calc(50% + 3px);
+        }
+        .pupil:after{
+            content: "";
+            width: 13px;
+            height: 13px;
+            background: #bcbcc1;
+            border-radius: 50%;
+            z-index: 25;
+            position: absolute;
+            top: calc(50% - 17px);
+            left: calc(50% + 10px);
+        }
+        .button{
+            width: 15px;
+            height: 15px;
+            background: #244356;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% + 35px);
+            right: 35px;
+        }
+        .head-bottom-crop{
+            width: 200px;
+            height: 50px;
+            overflow: hidden;
+            position: absolute;
+            top: 100%;;
+        }
+        .head-bottom-adjust{
+            width: 184px;
+            height: 50px;
+            position: absolute;
+            top: -26px;
+            left: calc(50% - 92px);
+            background: #ebf2fa;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            z-index: 22;
+        } 
+        .head-bottom-border{
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: -18px;
+            left: calc(50% - 100px);
+            background: #244356;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            z-index: 21;
+        } 
+        .body{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 40%;
+            left: calc(50% - 150px);
+            border-radius: 50%;
+            background: #ebf2fa;
+            border: 8px solid #244356;
+            overflow: hidden;
+            animation: roll 12s linear infinite;
+            z-index: 10;
+        }
+        .circle{
+            position: absolute;
+            border-radius: 50%;
+            background: #fdc23e;
+            border: 8px solid #244356;
+            z-index: 12;
+        }
+        .circle-1{
+            width: 165px;
+            height: 165px;
+            top: 0px;
+            left: -40px;
+        }
+        .circle-2{
+            width: 185px;
+            height: 185px;
+            bottom: -75px;
+            right: -20px;
+        }
+        .circle-3{
+            width: 410px;
+            height: 410px;
+            top: -270px;
+            left: 150px;
+        }
+        .circle:before{
+            content: "";
+            width: 45%;
+            height: 45%;
+            background: #ebf2fa;
+            border: 8px solid #244356;
+            border-radius: 50%;
+            position: absolute;
+            top: 27.5%;
+            left: 27.5%;  
+            box-sizing: border-box;
+        }
+        .dot{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #244356;
+            position: absolute;
+            top: calc(50% - 30px);
+            left: calc(50% + 25px);
+        }
+        .dot:after{
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #244356;
+            position: absolute;
+            top: 90px;
+            left: -100px;
+        }
+        .line{
+            width: 100px;
+            height: 8px;
+            background: #244356;
+            position: absolute;
+            z-index: 11;
+        }
+        .line-1{
+            transform: rotate(100deg);
+            top: 30px;
+            left: 30px;
+        }
+        .line-2{
+            transform: rotate(40deg);
+            top: 55px;
+            left: -90px;
+        }
+        .line-3{
+            transform: rotate(160deg);
+            top: -60px;
+            left: -55px;
+        }
+        .body-shadow{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: calc(40% + 8px);
+            left: calc(50% - 142px);
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 18;
+        }
+        .shadow{
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          position: absolute;
+          box-shadow: 0px 0px 60px rgba(0,0,0,0.4);
+          left: -40px;
+          top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <main class="background">
+        <section class="bb8">
+            <div class="antenna-1"></div>
+            <div class="antenna-2"></div>
+            <div class="head"> 
+                <div class="head-top-crop">
+                    <div class="head-top">
+                        <div class="eye">
+                            <div class="pupil"></div>
+                        </div>
+                        <div class="button"></div>
+                    </div>     
+                </div>
+                <div class="head-bottom-crop">
+                    <div class="head-bottom-adjust"></div>
+                    <div class="head-bottom-border"></div>                
+                </div>
+            </div>
+            <div class="body">
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+                <div class="circle circle-3"></div>
+                <div class="dot">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <div class="body-shadow">
+                <div class="shadow"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

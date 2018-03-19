@@ -1,0 +1,510 @@
+/* ----------   IMPORTANDO FONTE    ---------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+/* ----------   RESET   ---------- */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+/* ----------   NAVBAR  ---------- */
+.navbar{
+	height: 10vh;
+	width: 100%;
+	background: #fbab14;
+	border: 1vh solid #2c3493;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5vw;
+}
+.navbar-image{
+	height: 7vh;
+}
+.bars{
+	display: none;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 35px;
+	background: #2c3493;
+	border-radius: 5px; 
+	margin: 1vh 0;
+}
+.nav-link{
+	text-decoration: none;
+	font-size: 1.8vh;
+	font-weight: bolder;
+	color: #2c3493;
+	margin: 0 0.5vw;
+}
+@media (max-width: 720px){
+	.bars{
+		display: block;
+	}
+	.navbar-nav{
+		display: none;
+	}
+}
+/* ----------   PÁGINA MÓDULOS  ---------- */
+.modulos{
+	min-height: 90vh;
+	width: 100%;
+	background: #f16337;
+	margin: 10vh 0 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: #FFF;
+}
+.modulos-title{
+	font-size: 4vw;
+	font-weight: 900;
+	margin: 0 0 8vh;
+}
+.modulos-container{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.modulo-box{
+	width: 17vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 4vw;
+    text-decoration: none;
+    color: #FFF;
+}
+.modulo-title{
+	font-size: 2.8vw;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.modulo-image{
+	width: 100%;
+}
+.modulo-name{
+	font-size: 1.3vw;
+	letter-spacing: 1px;
+	padding: 1vh 2vw;
+
+}
+.modulo-text{
+	font-size: 1.3vw;
+	font-weight: 300;
+	padding: 1vh 2vw;
+}
+@media (max-width: 720px){
+	.modulos-title{
+		font-size: 10vw;
+		margin: 4vh 0;
+	}
+	.modulos-container{
+		flex-direction: column;
+	}
+	.modulo-box{
+		width: 100vw;
+		margin: 0 0 10vh;
+		align-items: flex-start;
+	}
+	.modulo-title{
+		font-size: 7vw;
+		margin: 0 5vw 0 52vw;
+	}
+	.modulo-image{
+		width: 35vw;
+		position: absolute;
+		margin: 0 0 0 10vw;
+	}
+	.modulo-name{
+		font-size: 4vw;
+		margin: 0 5vw 0 50vw;
+	}
+	.modulo-text{
+		font-size: 4vw;
+		font-weight: 300;
+		margin: 0 5vw 0 50vw;
+	}
+}
+/* ----------   PÁGINA MÓDULO 3  ---------- */
+.modulo3{
+	width: 100%;
+	margin: 10vh 0 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	color: #f16337;
+}
+.modulo3-title-box{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.modulo3-title{
+    font-size: 4vw;
+	font-weight: 900;
+    letter-spacing: 1px;
+	margin: 4vh 0 1vh;
+}
+.modulo3-subtitle{
+    font-size: 2vw;
+	font-weight: 600;
+	margin: 0 0 10vh;
+}
+.modulo3-image{
+    width: 20vw;
+    position: absolute;
+    margin: 60vh 10vw;
+}
+.modulo3-icons{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10vh;
+}
+.modulo3-icon-box{
+    width: 10vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5vw;
+}
+.modulo3-icon{
+    width: 5vw;
+}
+.modulo3-icon-title{
+    font-size: 1vw;
+    margin: 2vh 0 1vh;
+}
+.modulo3-icon-text{
+    text-align: center;
+    font-size: 0.98vw;
+    font-weight: 300;
+}
+.modulo3-info{
+    margin: 0 15vw 0 40vw;
+}
+.modulo3-info-box{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.modulo3-info-title{
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin: 2.5vh 0;
+}
+.modulo3-info-text{
+    font-size: 1.6vw;
+    color: #2c3493;
+    margin: 0 1vw;
+}
+.modulo3-projects{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh 0;
+    padding: 0 6vw;
+}
+.modulo3-project-box{
+    width: 25vw;
+    color: #2c3493;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.modulo3-project-image{
+    width: 100%;
+}
+.modulo3-project-title{
+    font-size: 1.8vw;
+    font-weight: 900;
+    margin: 5vh 0 0;
+}
+.modulo3-project-date{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.modulo3-buttons-box{
+    width: 20vw;
+    position: absolute;
+    margin: 108vh 10vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.modulo3-button{
+    height: 7vh;
+    width: 30vh;
+    background: #fbab14;
+	border: 0.6vh solid #2c3493;
+    border-radius: 1.5vh;
+    font-size: 3vh;
+    font-weight: 900; 
+    color: #2c3493;
+    margin: 0 0 5vh 0;
+}
+@media (max-width: 720px){
+    .modulo3{
+        align-items: center;
+    }
+    .modulo3-title-box{
+        width: 60vw;
+    }
+    .modulo3-title{
+        font-size: 12vw;
+        margin: 2vh 0 1vh;
+    }
+    .modulo3-subtitle{
+        font-size: 5vw;
+        margin: 0 0 4vh;
+    }
+    .modulo3-image{
+        width: 60vw;
+        position: static;
+        margin: 0;
+    }
+    .modulo3-icons{
+        flex-direction: column;
+        margin: 5vh 0 0;
+    }
+    .modulo3-icon-box{
+        width: 50vw;
+        margin: 3.5vh 0;
+    }
+    .modulo3-icon{
+        width: 40%;
+    }
+    .modulo3-icon-title{
+        font-size: 5vw;
+    }
+    .modulo3-icon-text{
+        font-size: 4.8vw;
+        font-weight: 300;
+    }
+    .modulo3-info{
+        margin: 0 10vw;
+    }
+    .modulo3-info-title{
+        align-self: center;
+        font-size: 7vw;
+    }
+    .modulo3-info-text{
+        font-size: 3.5vw;
+        margin: 0;
+    }
+    .modulo3-projects{
+        flex-direction: column;
+        margin: 0;
+    }
+    .modulo3-project-box{
+        width: 70vw;
+    }
+    .modulo3-project-image{
+        margin: 5vh 0 2vh;
+    }
+    .modulo3-project-title{
+        font-size: 5vw;
+        margin: 0 0 0.5vh;
+    }
+    .modulo3-project-date{
+        font-size: 4.5vw;
+    }
+    .modulo3-buttons-box{
+        width: 85%;
+        flex-direction: row;
+        justify-content: space-between;
+        position: static;
+        margin: 0;
+    }
+    .modulo3-button{
+        height: 8vh;
+        width: 40vw;
+        margin: 8vh 0 6vh;
+        padding: 0 8vw;
+        font-size: 4vw;
+        border-radius: 2.5vh;
+    }
+}
+/* ----------   FOOTER  ---------- */
+.footer{
+/*	min-height: 91vh;*/
+	width: 100%;
+	border: 1vh solid #2c3493;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #2c3493;
+}
+.footer-division{
+    width: 49vw;
+    display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.footer-text{
+	width: 48vw;
+	padding: 4vw;
+	font-size: 1.4vw;
+	letter-spacing: 0.2vw;
+}
+.footer-button{
+    height: 7vh;
+    width: 35vh;
+    background: #fbab14;
+	border: 0.3vh solid #2c3493;
+    border-radius: 1.5vh;
+    font-size: 3.2vh;
+    font-weight: 900; 
+    color: #2c3493;
+}
+.footer-contact{
+    width: 100%;
+    padding: 4vw;
+    list-style: none;
+}
+.footer-contact-box{
+    width: 42%;
+    margin: 2vh 0;
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.footer-contact-box:last-child{
+    width: 58%;   
+}
+.footer-contact-icon{
+    height: 6vh;
+}
+.footer-contact-title{
+    display: inline;
+    font-size: 3vh;
+    padding: 0 0 0 1vw;
+}
+.footer-institutes{
+    margin: 4vw 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.footer-institutes-box{
+    margin: 0 0 2vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.footer-institutes-title{
+    font-size: 2vh;
+    font-weight: 500;
+}
+.institute-realization{
+    width: 40%;
+}
+.footer-institutes-support{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.institute-support{
+    margin: 0 1vw;
+}
+.proa{
+    width: 15%;
+}
+.educap{
+    width: 25%;
+}
+.firsti{
+    width: 12%;
+}
+.footer-image{
+    width: 100%;
+}
+@media (max-width: 720px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer-division{
+        width: 100%;
+    }
+    .footer-text{
+        width: 100%;
+        font-size: 3.3vw;
+        padding: 10vw;
+    }
+    .footer-button{
+        width: 40vw;
+        border: 0.9vw solid;
+        font-size: 4vw;
+    }
+    .footer-contact{
+        padding: 10vw;
+    }
+    .footer-contact-box{
+        margin: 0;
+    }
+    .footer-contact-icon{
+        width: 4vh;
+    }
+    .footer-contact-title{
+        font-size: 2vh;
+    }
+    .footer-institutes{
+        width: 100%;
+        margin: 0;
+        padding: 2vh 0;
+        border-top: 1vh solid #2c3493;
+        flex-direction: row;
+        order: 1;
+    }
+    .footer-institutes-box{
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .footer-institutes-title{
+        font-size: 2.5vw;
+        margin: 1vh 0 0 5vw;
+    }
+    .institute-realization{
+        width: 25vw;
+    }
+    .footer-institutes-support{
+        margin: 0;
+    }
+    .institute-support{
+        margin: 1vh 1vw 0;
+    }
+    .proa{
+        width: 7vw;
+    }
+    .educap{
+        width: 15vw;
+    }
+    .firsti{
+        width:8vw;
+    }
+}
